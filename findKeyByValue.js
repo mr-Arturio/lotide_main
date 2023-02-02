@@ -5,10 +5,14 @@ const assertEqual = (actual, expected) => {
 const findKeyByValue = function (object, value) {
   for (let key of Object.keys(object)) {
     return (object[key] === value) ? key : undefined;
-
+    /*   if (obj[key] === value) {
+      return key;
+    }
+  }
+  return undefined;
+} */
   }
 };
-
 
 
 const bestTVShowsByGenre = {
