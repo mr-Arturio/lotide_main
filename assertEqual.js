@@ -1,7 +1,5 @@
 // FUNCTION IMPLEMENTATION
-const assertEqual = (actual, expected) => {
-  console.log((actual === expected) ? `🟢🟢🟢Assertion passed ${actual} === ${expected}` : `🔴🔴🔴Assertion Failed ${actual} !== ${expected}`);
-}; // Our assertEqual function can only compare primitive values.
+const assertEqual = (actual, expected) => (actual === expected) ? `🟢🟢🟢Assertion passed ${actual} === ${expected}` : `🔴🔴🔴Assertion Failed ${actual} !== ${expected}`; // Our assertEqual function can only compare primitive values.
 
 
 // TEST CODE
