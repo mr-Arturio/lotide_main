@@ -2,8 +2,8 @@ const assertEqual = (actual, expected) => {
   console.log((actual === expected) ? `🟢🟢🟢Assertion passed ${actual} === ${expected}` : `🔴🔴🔴Assertion Failed ${actual} !== ${expected}`);
 };
 
-const findKeyByValue = function (object, value) {
-  for (let key of Object.keys(object)) {
+const findKeyByValue =  (object, value) => {
+  for (let key of Object.keys(object)) {        //(let key in object)
     return (object[key] === value) ? key : undefined;
     /*   if (obj[key] === value) {
       return key;
