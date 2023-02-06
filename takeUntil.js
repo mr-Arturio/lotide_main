@@ -15,15 +15,18 @@ const assertArraysEqual = (actual, expected) => (eqArrays(actual, expected)) ? `
 const takeUntil = function (array, callback) {
   const results = [];
   for (let item of array) {
-    results.push(callback(item));
+    if (callback(item)) {
+      return results;
+    }
+    results.push(item);
   }
-  return results;
+  //return results;
 };
 
 
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const results1 = takeUntil(data1, x => x < 0);
-console.log(assertArraysEqual(results1, [1, 2, 5, 7, 2]));// [ 1, 2, 5, 7, 2 ]
+console.log(assertArraysEqual(results1, [1, 2, 5, 7]));// [ 1, 2, 5, 7, 2 ]
 
 console.log('---');
 
