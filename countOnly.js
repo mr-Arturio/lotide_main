@@ -1,7 +1,4 @@
-const assertEqual = (actual, expected) => {
-  console.log((actual === expected) ? `🟢🟢🟢Assertion passed ${actual} === ${expected}` : `🔴🔴🔴Assertion Failed ${actual} !== ${expected}`);
-}; //Our assertEqual function can only compare primitive values
-
+const assertEqual = require('./assertEqual.js');
 // allItems: an array of strings that we need to look through
 // itemsToCount: an object specifying what to count
 /*countOnly will be given an array and an object.
@@ -41,7 +38,7 @@ const firstNames = [
 
 const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
 
-assertEqual(result1["Jason"], 1);
-assertEqual(result1["Karima"], undefined);
-assertEqual(result1["Fang"], 2);
-assertEqual(result1["Agouhanna"], undefined);
+console.log(assertEqual(result1["Jason"], 1));
+console.log(assertEqual(result1["Karima"], undefined));
+console.log(assertEqual(result1["Fang"], 2));
+console.log(assertEqual(result1["Agouhanna"], undefined));
