@@ -1,19 +1,4 @@
-const eqArrays = (arr1, arr2) => {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual = (actual, expected) => {
-  console.log((eqArrays(actual, expected)) ? `🟢🟢🟢Assertion passed ${actual} === ${expected}` : `🔴🔴🔴Assertion Failed ${actual} !== ${expected}`);
-};
-
+const assertArraysEqual = require('./assertArraysEqual');
 
 const letterPositions = function (sentence) {
   const results = {};  //empty variable that will show/store the position of leter in the sentence
