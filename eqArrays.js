@@ -12,6 +12,8 @@ const eqArrays = (arr1, arr2) => {
   return true;
 };
 
+module.exports = eqArrays;
+
 console.log(assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true));
 console.log(assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true)); // => true
 console.log(assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), true)); // => false
