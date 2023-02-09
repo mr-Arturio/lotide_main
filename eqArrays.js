@@ -1,4 +1,4 @@
-const assertEqual = (actual, expected) => (actual === expected) ? `🟢🟢🟢Assertion passed ${actual} === ${expected}` : `🔴🔴🔴Assertion Failed ${actual} !== ${expected}`;
+const assertEqual = require("./assertEqual.js");
 
 const eqArrays = (arr1, arr2) => {
   if (arr1.length !== arr2.length) {
