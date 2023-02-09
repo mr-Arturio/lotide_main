@@ -1,10 +1,7 @@
-const assertEqual = (actual, expected) => {
-  console.log((actual === expected) ? `🟢🟢🟢Assertion passed ${actual} === ${expected}` : `🔴🔴🔴Assertion Failed ${actual} !== ${expected}`);
-}; //Our assertEqual function can only compare primitive values
+const assertEqual = require('./assertEqual.js');
 
 const countLetters = function (text) {
   let quantity = {}; // why {}??
-
   //const newvar = text.replace(/\s/g, ''); 
   //for (letter of text)
   for (let i = 0; i < text.length; i++) {
