@@ -1,4 +1,4 @@
-const assertEqual = (actual, expected) => (actual === expected) ? `🟢🟢🟢Assertion Passed ${actual} === ${expected}` : `🔴🔴🔴Assertion Failed ${actual} !== ${expected}`;
+const assertEqual = require('./assertEqual');
 
 const findKey = (object, value) => {
   for (let key in object) { // not of, damn
@@ -19,4 +19,4 @@ const starSystem = findKey({
   "Akelarre": { stars: 3 }
 }, x => x.stars === 2) // => "noma"
 
-console.log(assertEqual(starSystem, "noma"));
+assertEqual(starSystem, "noma");
