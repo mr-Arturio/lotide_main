@@ -9,19 +9,19 @@ const countOnly = require('./countOnly');
 const eqArrays = require('./eqArrays');
 const eqObjects = require('./eqObjects');
 const findKeyByValue = require('./findKeyByValue');
-const fflatten = require('./flatten');
+const flatten = require('./flatten');
 
 module.exports = {
-  head: head,
-  tail: tail,
-  middle: middle,
-  assertArraysEqual: assertArraysEqual,
-  assertEqual: assertEqual,
-  assertObjectsEqual: assertObjectsEqual,
-  countLetters: countLetters,
-  countOnly: countOnly,
-  eqArrays: eqArrays,
-  eqObjects: eqObjects,
-  findKeyByValue: findKeyByValue,
-  flatten: flatten
+  head,
+  tail,
+  middle,
+  assertArraysEqual,
+  assertEqual,
+  assertObjectsEqual,
+  countLetters,
+  countOnly,
+  eqArrays,
+  eqObjects,
+  findKeyByValue,
+  flatten
 }
