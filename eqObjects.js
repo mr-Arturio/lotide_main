@@ -1,5 +1,3 @@
-const assertEqual = require('./assertEqual');
-
 const eqArrays = require('./eqArrays');
 
 // Returns true if both objects have identical keys with identical values.
@@ -23,53 +21,5 @@ const eqObjects = (object1, object2) => {
   return true;
 };
 
-const shirtObject = {
-  color: 'red',
-  size: 'medium'
-};
-const anotherShirtObject = {
-  size: 'medium',
-  color: 'red'
-};
+module.exports = eqObjects;
 
-
-
-const longSleevShirtObject = {
-  size: 'medium',
-  color: 'red',
-  sleevLength: 'long'
-};
-
-const multiColorShirtObject = {
-  colors: ["red", "blue"],
-  size: "medium"
-};
-
-const anotherMultiColorShirtObject = {
-  size: "medium",
-  colors: ["red", "blue"]
-};
-
-const longSleeveMultiColorShirtObject = {
-  size: "medium",
-  colors: ["red", "blue"],
-  sleeveLength: "long"
-};
-
-const myPet = {
-  breed: 'dog',
-  color: 'black',
-  age: 7
-};
-
-const myPet2 = {
-  breed: 'dog',
-  color: 'black',
-  age: 7
-};
-
-console.log(assertEqual(eqObjects(shirtObject, anotherShirtObject), true)); // => true
-console.log(assertEqual(eqObjects(shirtObject, longSleevShirtObject), false)); // => false
-console.log(assertEqual(eqObjects(multiColorShirtObject, longSleeveMultiColorShirtObject), false));
-console.log(assertEqual(eqObjects(multiColorShirtObject, anotherMultiColorShirtObject), true));
-console.log(assertEqual(eqObjects(myPet, myPet2), false));
