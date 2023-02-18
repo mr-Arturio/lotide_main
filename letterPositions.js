@@ -1,4 +1,4 @@
-const assertArraysEqual = require('./assertArraysEqual');
+//const assertArraysEqual = require('./assertArraysEqual');
 
 const letterPositions = function (sentence) {
   const results = {};  //empty variable that will show/store the position of leter in the sentence
@@ -14,12 +14,8 @@ const letterPositions = function (sentence) {
       }
     }
   }
+  //  console.log(results);
   return results;
 };
 
-
-
-console.log(letterPositions("lighthouse in the house"));
-assertArraysEqual(letterPositions("hello").h, [0]);
-assertArraysEqual(letterPositions("hello").e, [1]);
-assertArraysEqual(letterPositions("hello").l, [2, 3]);
+module.exports = letterPositions;
