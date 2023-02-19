@@ -26,18 +26,19 @@ This project was created and published by [Artur T](https://github.com/mr-Arturi
 
 The following functions are currently implemented:
 
-* ```assertArraysEqual``` 
-* ```assertEqual```
-* ```assertObjectsEqual```
-* ```countLetters```
-* ```countOnly```
-* ```eqArrays```
-* ```eqObjects```
-* ```findKeyByValue```
-* ```flatten```
-* ```head```
-* ```letterPositions```
-* ```map```
-* ```middle```
-* ```tail```
-* ```without```
+* [assertArraysEqual](/assertArraysEqual.js): takes two arrays as inputs and compares them to determine if they are equal.
+* [assertEqual]()
+* [assertObjectsEqual]()
+* [countLetters]()
+* [countOnly]()
+* [eqArrays]()
+* [eqObjects]()
+* [findKey]()
+* [findKeyByValue]()
+* [flatten]()
+* [head]()
+* [letterPositions]()
+* [map]()
+* [middle]()
+* [tail]()
+* [without]()
