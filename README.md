@@ -27,18 +27,18 @@ This project was created and published by [Artur T](https://github.com/mr-Arturi
 The following functions are currently implemented:
 
 * [assertArraysEqual](/assertArraysEqual.js): takes two arrays as inputs and compares them to determine if they are equal.
-* [assertEqual](/assertEqual.js)
-* [assertObjectsEqual](/assertObjectsEqual.js)
-* [countLetters](/countLetters.js)
-* [countOnly](/countOnly.js)
-* [eqArrays](/eqArrays.js)
-* [eqObjects](/eqObjects.js)
-* [findKey](/findKey.js)
-* [findKeyByValue](/findKeyByValue.js)
-* [flatten](/flatten.js)
-* [head](/head.js)
-* [letterPositions](/letterPositions.js)
-* [map](/map.js)
-* [middle](/middle.js)
-* [tail](/tail.js)
-* [without](/without.js)
+* [assertEqual](/assertEqual.js): compares two values for equality
+* [assertObjectsEqual](/assertObjectsEqual.js); compare if two objects are equal.
+* [countLetters](/countLetters.js): count quantity of each letter in the string.
+* [countOnly](/countOnly.js): count specified items.
+* [eqArrays](/eqArrays.js): can compare two arrays for a perfect match.
+* [eqObjects](/eqObjects.js):check if two objects are equal.
+* [findKey](/findKey.js): finds the required key of object.
+* [findKeyByValue](/findKeyByValue.js): finds the specific key in object.
+* [flatten](/flatten.js): returns singlelayered array
+* [head](/head.js): function for arrays to retrieve the first element from the array.
+* [letterPositions](/letterPositions.js): returns positions of each letter in the string.
+* [map](/map.js): apply the given callback function to each element in the input array and return a new array containing the results.
+* [middle](/middle.js): function for arrays to retrieve the middle elements from the array.
+* [tail](/tail.js): function for arrays to retrieve every element except the head (first element) of the array.
+* [without](/without.js): removes needed elements from the array, and return new array. 
