@@ -1,5 +1,5 @@
 const findKey = (object, value) => {
-  for (let key in object) { 
+  for (const key in object) { 
   
     if (value(object[key])) {
       return key;
