@@ -1,5 +1,5 @@
 const findKeyByValue =  (object, value) => {
-  for (let key of Object.keys(object)) {        //(let key in object)
+  for (const key of Object.keys(object)) {
     if (object[key] === value) {
       return key;
     }
