@@ -33,12 +33,13 @@ The following functions are currently implemented:
 * [countOnly](/countOnly.js): count specified items.
 * [eqArrays](/eqArrays.js): can compare two arrays for a perfect match.
 * [eqObjects](/eqObjects.js):check if two objects are equal.
-* [findKey](/findKey.js): finds the required key of object.
-* [findKeyByValue](/findKeyByValue.js): finds the specific key in object.
+* [findKey](/findKey.js): finds the required key of the object.
+* [findKeyByValue](/findKeyByValue.js): finds the specific key in the object.
 * [flatten](/flatten.js): returns singlelayered array
 * [head](/head.js): function for arrays to retrieve the first element from the array.
 * [letterPositions](/letterPositions.js): returns positions of each letter in the string.
 * [map](/map.js): apply the given callback function to each element in the input array and return a new array containing the results.
 * [middle](/middle.js): function for arrays to retrieve the middle elements from the array.
 * [tail](/tail.js): function for arrays to retrieve every element except the head (first element) of the array.
-* [without](/without.js): removes needed elements from the array, and return new array. 
+* [takeUntil](/takeUntil.js): takes two parameters: an array and a callback function. The function returns a new array that contains all the elements from the original array until the first element for which the callback returns a truthy value.
+* [without](/without.js): removes needed elements from the array, and returning a new array. 
