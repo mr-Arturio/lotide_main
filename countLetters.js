@@ -1,10 +1,11 @@
 const countLetters = function (text) {
+  const newText = text.toLowerCase();
+  const newArr = newText.split('');
   let quantity = {};
 
-  for (let i = 0; i < text.length; i++) {
+  for (let letter of newArr) {
 
-    let letter = text[i];
-    if (letter !== ' ') { //check if the character is space, if not move forward
+       if (letter !== ' ') { //check if the character is space, if not move forward
 
       if (!quantity[letter]) { // checks if character is already present in the quantity object
         quantity[letter] = 1; //if not present, new property added with value 1
