@@ -1,9 +1,8 @@
 const countLetters = function (text) {
-  const newText = text.toLowerCase();
-  const newArr = newText.split('');
+  const newText = text.toLowerCase().split('');
   let quantity = {};
 
-  for (let letter of newArr) {
+  for (let letter of newText) {
 
        if (letter !== ' ') { //check if the character is space, if not move forward
 
@@ -19,3 +18,19 @@ const countLetters = function (text) {
 };
 
 module.exports = countLetters;
+
+
+/* reduce method
+const countLetters = function(text) {
+  const newText = text.toLowerCase().split('');
+
+  const quantity = newText.reduce((acc, letter) => {
+    if (letter !== ' ') {
+      acc[letter] = acc[letter] ? acc[letter] + 1 : 1;
+    }
+    return acc;
+  }, {});
+
+  console.log(quantity);
+};
+*/
